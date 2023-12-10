@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Solution {
+public class Sum_of_zeros {
     public static int coverageOfMatrix(ArrayList<ArrayList<Integer>> mat) {
         int countAll = 0; // track of total coverage
         int rows = mat.size(); // store number of row
