@@ -12,7 +12,10 @@ public class Wrapper {
 
         swapObj(a, b);
 
-        System.out.println(a+ " " + b);
+        System.out.println(a + " " + b);
+
+        A obj = new A("Vipin");
+        System.out.println(obj);
 
     }
 
@@ -33,4 +36,20 @@ public class Wrapper {
         b = temp;
     }
 
+}
+
+class A {
+    final int num = 10;
+    String name;
+
+    public A(String name) {
+        this.name = name;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Object destroyed");
+    }
+
+    
 }
